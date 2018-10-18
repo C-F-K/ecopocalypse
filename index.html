@@ -16,6 +16,8 @@
 
             .countdown {
                 display: flex;
+                min-height: 100vh;
+                flex-direction: row;
                 justify-content: center;
                 padding: 0 5vw;
             }
@@ -38,6 +40,18 @@
 
             .seconds > .value {
                 width: 9vw;
+            }
+
+            .footer {
+                font-size: 0.66vw;
+                text-align: center;
+                font-family: sans-serif;
+                color: #dddddd;
+                overflow: visible;
+            }
+
+            .footer > a:link, .footer > a:visited, .footer > a:hover, .footer > a:active {
+                color: #333333;
             }
         </style>
     </head>
@@ -68,7 +82,9 @@
                 <div class="label"><span>seconds</span></div>
             </div>
         </div>
-
+        <div class="footer">
+            <a href="https://b8f65cb373b1b7b15feb-c70d8ead6ced550b4d987d7c03fcdd1d.ssl.cf3.rackcdn.com/cms/reports/documents/000/002/327/original/Carbon-Majors-Report-2017.pdf">100 companies are responsible for 71% of global emissions</a>
+        </div>
         <script>
             function countdown(endDate) {
                 let timer, years, days, hours, minutes, seconds, millis;
